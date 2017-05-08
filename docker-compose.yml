@@ -1,5 +1,7 @@
 db:
   image: mysql
+  volumes:
+    - /home/ec2-user/mysql:/var/lib/mysql:rw
   environment:
     - MYSQL_ROOT_PASSWORD=password
 web:
